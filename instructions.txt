@@ -1,0 +1,13 @@
+Here are the steps to get the POS system running on your computer.
+
+1. Download and install XAMPP from apachefriends.org if you do not already have it.
+2. Open the XAMPP Control Panel and start the Apache and MySQL services.
+3. Copy the entire pos_system folder into the htdocs directory inside your XAMPP installation. On Windows this is usually C:\xampp\htdocs. On macOS it is /Applications/XAMPP/htdocs. Make sure the folder is named pos_system.
+4. Open your web browser and go to http://localhost/phpmyadmin.
+5. Click on the SQL tab at the top.
+6. Open the database.sql file located inside the pos_system/sql folder, copy all of its contents, and paste them into the SQL box in phpMyAdmin.
+7. Click the Go button to run the script. This will create the database and all the tables, and insert a default admin user and sample products.
+8. Alternatively you can import the database.sql file which wil create all the tables seeded with default products that you can delete if you want.
+9. In your browser, go to http://localhost/pos_system/.
+10. Log in with the username admin and the password admin123.
+11. Once logged in, you can use the admin panel to add cashiers, manage inventory, or log out and log in as a cashier to start selling.
